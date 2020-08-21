@@ -1,0 +1,33 @@
+/*this class selector will be used for all the pages body, all pages are nested in the .App div*/
+.App {
+  background: #F2F2F2;
+}
+
+/*button controls*/
+.Controls {
+  background:#1E90FF;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+/* Start CSS for Landing page*/
+.LandingPageContainer {
+  background: linear-gradient(#F2F2F2, #1E90FF);
+}
+/* End CSS for Landing page*/
+
+
+/* Start CSS for registration Page */
+.RegistrationPageContainer {
+  background: linear-gradient(#bdc3c7, #2c3e50);
+}
+/* End CSS for registration Page */
+
+
+
+
+/* Start CSS for login Page */
+.LoginPageContainer {
+  background: linear-gradient(#06beb6, #48b1bf);
+}
+/* End CSS for Login Page */
