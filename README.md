@@ -13,3 +13,11 @@ It is intended that the app will solve the following challenges
 * Medical recommendations
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3ba25180bf7547d8ad523dfcfd845a06)](https://app.codacy.com/gh/BuildForSDGCohort2/team-024-group-a?utm_source=github.com&utm_medium=referral&utm_content=BuildForSDGCohort2/team-024-group-a&utm_campaign=Badge_Grade_Settings)
+
+### Backend install Server dependencies
+Run `npm install` to install node modules
+
+### Run Backend Development Server
+Run `nodemon` to run server on port 5000: `http://localhost:5000`
+
+

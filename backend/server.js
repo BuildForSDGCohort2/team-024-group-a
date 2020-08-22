@@ -17,4 +17,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
+app.use('/api', require('./src/routes/guest.route'))
+
 app.listen(PORT, ()=>{console.log(`Server listening on port ${PORT}`)});
