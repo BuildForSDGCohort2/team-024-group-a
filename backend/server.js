@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 //variable declarations
 const app = express()
-const PORT = process.env.PORT | 5000;
+const PORT = parseInt(process.env.PORT) || 5000;
 
 //Disable power-by 
 app.disable('x-powered-by');
@@ -25,4 +25,4 @@ app.use('/api/hospital', require('./src/routes/hospitals.route'));
 app.use('/api/dcenter', require('./src/routes/diagnostic-center.route'));
 
 //SERVER LISTENING ON DESIGNATED PORT
-app.listen(PORT, ()=>{console.log(`Server listening on port ${PORT}`)});
+app.listen(PORT, ()=>{console.log(`Server listening on port ${PORT}`)})
