@@ -1,8 +1,6 @@
 const cluster = require('cluster')
 const os = require('os');
 require('dotenv').config({path: __dirname + '/.env'});
-const {promisify} = require('util');
-
 
 if(cluster.isMaster){
     
