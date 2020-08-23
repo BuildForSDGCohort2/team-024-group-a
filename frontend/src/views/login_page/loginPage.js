@@ -1,13 +1,13 @@
 import React from 'react';
-import Nav from '../../components/nav/nav';
+import {Link} from 'react-router-dom';
 
 class LoginPage extends React.Component {
     render(){
         return (
             <div>
-                <Nav />
                 {/* HTML CODE FOR LOGIN PAGE */}
                 <h1>LOGIN PAGE</h1>
+                <Link to="/">Go home</Link>
             </div>
         )
     }
