@@ -1,6 +1,6 @@
 const appConfig = {
     APP_NAME: "swiftHealth"
-}
+};
 
 /**
  * freezing the object so no data can be added

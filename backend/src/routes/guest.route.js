@@ -1,4 +1,6 @@
-const router = require("express").Router();
+var express = require("express");
+var  router = express.Router();
+
 const guestController = require("../controllers/guest.controller");
 
 

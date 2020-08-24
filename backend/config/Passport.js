@@ -1,5 +1,5 @@
-const passport = require("passport")
-const localStrategy = require("passport-local").Strategy;
+const passport = require("passport");
+const LocalStrategy = require("passport-local").Strategy;
 const passportJwt = require("passport-jwt");
 const User = require("../src/database/models/Auth");
 
@@ -10,22 +10,24 @@ class Passport {
     }
 
     init(req, res, next){
-        //Auth_Type can either be client, doctor, hospital or diagnostic center
-        const auth_type = req.query.auth_type;
-        auth_type = (auth_type != undefined && typeof auth_type == "string" ? auth_type : "");
-        passport.use(auth_type, new LocalStrategy(
+        //AuthType can either be client, doctor, hospital or diagnostic center
+        var authType = req.query.authType;
+        authType = (authType !== undefined && typeof authType === "string" ? authType : "");
+        passport.use(authType, new LocalStrategy(
            function(username, password, done){
                new User({username})
                 .fetch()
-                .then(user => {
+                .then((user) => {
                     if(!user){return done(null, false, {})}
-                    user = user.toJSON()
-                    if(user.validPassword(password)){return done(null, false)}
+                    user = user.toJSON();
+                    if(user.validPassword(password)){
+                        return done(null, false);
+                    }
                     return done(null, user);
                 })
-                .catch(err => {
+                .catch((err) => {
                     return done(err);
-                })
+                });
            }
         ));
         next();
@@ -41,7 +43,7 @@ class Passport {
               try {
                   return done(null, token.user);
               } catch (err) {
-                  done(err)
+                  done(err);
               }
           }
         ))
