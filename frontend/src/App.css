@@ -22,6 +22,181 @@
 .RegistrationPageContainer {
   background: linear-gradient(#bdc3c7, #2c3e50);
 }
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/*GOOGLE FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.RegistrationPageContainer,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+/*General Div class; Container*/
+.container {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 5rem;
+  transition: all 0.2s 0.7s;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+
+
+.title {
+  font-size: 2.2rem;
+  color: #1E90FF;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  max-width: 380px;
+  width: 100%;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  height: 55px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+}
+
+.input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+
+.container1 .fa-eye {
+    margin-left: 340px;
+    cursor: pointer;
+    margin-top: -55px;
+    color: #1E90FF;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/*Input Placeholder*/
+.input-field input::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+/*Select*/
+.sel{
+  margin-top: 20px;
+  width: 380px;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  height: 55px;
+  border-radius: 55px;
+  padding: 0 0.4rem;
+  position: relative;
+  color: #aaa;
+  border: 1px solid #f0f0f0;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/*Sign Up Word*/
+p a {
+  color: #1E90FF;
+  text-decoration: none;
+}
+
+
+/*Social Media text*/
+.social-text {
+  padding: 0.7rem 0;
+  font-size: 1rem;
+}
+
+/*Social media*/
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+/*Social Icon*/
+.social-icon {
+  height: 46px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.45rem;
+  color: #333;
+  border-radius: 50%;
+  border: 1px solid #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+/* Displays when Social hover**/
+.social-icon:hover {
+  color: #4481eb;
+  border-color: #1E90FF;
+}
+
+/* sign Up button*/
+.btn {
+  width: 150px;
+  background-color: #1E90FF;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #F2F2F2;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 30px;
+}
+
+/*Sign up hover*/
+.btn:hover {
+  background-color: #F2F2F2;
+  color: #1E90FF;
+}
+
+/*Caplock ON Message*/
+#text {
+  color:#1E90FF;
+  margin-left: 50px;
+}
+
 /* End CSS for registration Page */
 
 
