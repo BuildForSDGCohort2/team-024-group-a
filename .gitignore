@@ -1,8 +1,19 @@
 # BACKEND IGNORE LIST
+#Folders
 
 /backend/node_modules
 /backend/.env
 /backend/dist
+/backend/src/database
+
+# FIles
+
+knexfile.js
+
+
+
+
+
 /tmp
 /out-tsc
 # Only exists if Bazel was run

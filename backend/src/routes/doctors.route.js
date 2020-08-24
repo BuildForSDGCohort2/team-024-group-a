@@ -1,8 +1,9 @@
-const router = require('express').Router();
+var express = require("express");
+var  router = express.Router();
 
 
-router.get('/',  [], function(req, res){
-    return res.status(200).json({message: "Doctors  routes"})
+router.get("/",  [], function(req, res){
+    return res.status(200).json({message: "Doctors  routes"});
 });
 
 

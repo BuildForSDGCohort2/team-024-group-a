@@ -1,4 +1,4 @@
-const morgan = require('morgan');
+const morgan = require("morgan");
 
 class Logger {
 
@@ -12,4 +12,4 @@ class Logger {
 
 }
 
-module.exports = new Logger()
+module.exports = new Logger();
