@@ -1,9 +1,9 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import Nav from '../../components/nav/nav';
-import { Layout, Button , Row, Col} from 'antd';
-import './landingPage.css';
-import medicalSvgPanel1 from '../../assest/images/medical-svg.svg';
+import React from "react";
+import {Link} from "react-router-dom";
+import Nav from "../../components/nav/nav";
+import { Layout, Button , Row, Col} from "antd";
+import "./landingPage.css";
+import medicalSvgPanel1 from "../../assest/images/medical-svg.svg";
 import {FieldTimeOutlined, 
     LikeOutlined, 
     FileProtectOutlined, 
@@ -11,13 +11,13 @@ import {FieldTimeOutlined,
     RiseOutlined, 
     UserOutlined, 
     CreditCardOutlined,
-     PhoneOutlined} from '@ant-design/icons';
-const { Header, Footer, Content } = Layout;
+     PhoneOutlined} from "@ant-design/icons";
+const { Header, Content } = Layout;
 
 class LandingPage extends React.Component {
     render(){
         return (
-            <div style={{overflow: 'hidden'}}>
+            <div style={{overflow: "hidden"}}>
                 <Layout className="landing-site-layout">
                     <Header className="header-container">
                       <Nav />
@@ -102,11 +102,10 @@ class LandingPage extends React.Component {
                    </>
                 </Content>
 
-                <Footer style={{ textAlign: 'center' }}>Swift Health ©2020</Footer>
                 </Layout>
             </div>
-        )
-    }
-}
+        );
+    };
+};
 
 export default LandingPage;

@@ -1,4 +1,4 @@
-.landing-site-layout .header-container{
+.landing-site-layout .header-container {
     width: 100%;
     height: 470px;
     z-index: 1;
@@ -7,7 +7,7 @@
     background-size: 100% 100%;
 }
 
-.landing-site-layout .header-container:after{
+.landing-site-layout .header-container:after {
     content : '';
     position: absolute;
     top: 0;
@@ -18,24 +18,24 @@
     background-image:  linear-gradient(to right, rgb(236 0 236 / 42%) , #1e90ffb8);
 }
 
-.flex-center{
+.flex-center {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.home-text{
+.home-text {
     margin-top: 6em;
 }
 
-.home-text>h3{
+.home-text > h3 {
     height: 40px;
     font-size: 20px;
     color: white;
     margin: 0;
 }
 
-.home-text>h1{
+.home-text > h1 {
     font-size: 60px;
     padding-top: 12px;
     padding-bottom: 15px;
@@ -43,7 +43,7 @@
     color: white;
 }
 
-.home-text>button{
+.home-text > button {
     height: 30px;
     display: flex;
     align-items: center;
@@ -65,7 +65,7 @@
     height: 100%;
 } */
 
-.side-img{
+.side-img {
     height: 100%;
     /* width: 50%; */
     display: flex;
@@ -73,7 +73,7 @@
     align-items: center;
 }
 
-.side-panel{
+.side-panel {
     /* width: 50%; */
     height: 100%;
     display: flex;
@@ -81,12 +81,12 @@
     align-items: center;
 }
 
-.details-card{
+.details-card {
     width: 70%;
     margin: 15px;
 }
 
-.top-mark{
+.top-mark {
     width: 35px;
     height: 3px;
     background-color: dodgerblue;
@@ -95,22 +95,22 @@
     border-radius: 9px;
 }
 
-.btn-flex{
+.btn-flex {
     display: flex;
     justify-content: space-around;
 }
 
-.btn-border-round{
+.btn-border-round {
     background-color: dodgerblue;
     color: white;
     border-radius: 20px;
 }
 
-.bg-white{
+.bg-white {
     background-color: white;
 }
 
-.icon{
+.icon {
     border: 1px solid dodgerblue;
     width: 100px;
     color: dodgerblue;
@@ -124,37 +124,37 @@
     cursor: pointer;
 }
 
-.icon:hover{
+.icon:hover {
     background-color: dodgerblue;
     color: white !important;
 }
-.feature-container{
+.feature-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
 }
 
-.features-row-container{
+.features-row-container {
     width: 80%;
 }
 
-.features-row-container>.ant-row:last-child{
+.features-row-container > .ant-row:last-child {
     margin-top: 10px;
 }
 
-.feature-col{
+.feature-col {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.feature-col>h2{
+.feature-col > h2 {
     font-size: 14px;
     margin: 10px 0px;
 }
 
-.nav-logo>span{
+.nav-logo > span{
     font-size: 24px;
     color: white;
     background: dodgerblue;
@@ -163,10 +163,10 @@
 }
 
 @media all and (max-width: 600px){
-    .header-container{
+    .header-container {
         padding: 0;
     }
-    .home-text>h1{
+    .home-text > h1 {
         font-size: 30px;
     }
     .nav-btn {

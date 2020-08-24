@@ -1,5 +1,8 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React from "react";
+import {Link} from "react-router-dom";
+import "./registrationPage.css";
+
+import Nav from "../../components/nav/nav";
 
 class RegistrationPage extends React.Component {
 
@@ -54,7 +57,6 @@ class RegistrationPage extends React.Component {
     render(){
         return (
             <div>
-<<<<<<< HEAD
                 <Nav />
                 <div className="container">
                     <form action="#" className="sign-up-form">
@@ -124,14 +126,12 @@ class RegistrationPage extends React.Component {
                               </div>
                               </form>
                 </div>
-=======
-                {/* HTML CODE FOR REGISTRATION PAGE */}
-                <h1>REGISTRATION PAGE</h1>
+
                 <Link to="/">Go home</Link>
->>>>>>> 9f3ce2200855c8232d64c44a21c38fb687563cd3
+
             </div>
-        )
-    }
-}
+        );
+    };
+};
 
 export default RegistrationPage;
