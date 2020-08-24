@@ -1,4 +1,4 @@
-const _app = require('../../config/App')
+const _app = require("../../config/App")
 
 class GuestController {
 
@@ -7,10 +7,10 @@ class GuestController {
     }
 
     welcome =  async (req, res)=>{
-        let message = await `Welcome to ${_app.appName} Platform`;
+        let message = await `Welcome to ${_app.APP_NAME} Platform`;
         return res.status(200).format({
             html: function(){
-                res.send(message)
+                res.send(message);
             },
             json: function(){
                 res.status(200).json({message});
@@ -21,7 +21,7 @@ class GuestController {
             default: function(){
                 res.status(200).json({message});
             }
-        })
+        });
     }
 }
 
