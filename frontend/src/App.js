@@ -1,12 +1,13 @@
-import React from 'react';
-import './App.css';
-import './App.less';
+import React from "react";
+import "./App.css";
+import "./App.less";
 import {Switch, Route, BrowserRouter as Router} from "react-router-dom";
 
-import LandingPage from './views/landing_page/landingPage';
-import LoginPage from './views/login_page/loginPage';
-import RegistrationPage from './views/registration_page/registrationPage';
-import NotFound from './views/notfound_page/notfound';
+import LandingPage from "./views/landing_page/landingPage";
+import LoginPage from "./views/login_page/loginPage";
+import RegistrationPage from "./views/registration_page/registrationPage";
+import NotFound from "./views/notfound_page/notfound";
+import Footer from "./components/footer/footer";
 
 class App extends React.Component {
 
@@ -22,10 +23,11 @@ class App extends React.Component {
               </Switch>
          </Router>
 
+         <Footer />
         </div>
       );
-  }
+  };
 
-}
+};
 
 export default App;
