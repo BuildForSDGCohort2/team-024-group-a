@@ -107,22 +107,22 @@ class RegistrationPage extends React.Component {
 
 
                                 <input type="submit" className="btn" value="Sign up" />
-                                <p style={{color: "black"}}>Already a User? <a href="#">Sign in</a></p>
+                                <p style={{color: "black"}}>Already a User? Sign in</p>
                                 <p className="social-text">Or Sign up using</p>
 
                               <div className="social-media">
-                                  <a href="#" className="social-icon">
+                                  <button className="social-icon">
                                     <i className="fa fa-facebook-f"></i>
-                                  </a>
-                                  <a href="#" className="social-icon">
+                                  </button>
+                                  <button className="social-icon">
                                     <i className="fa fa-twitter"></i>
-                                  </a>
-                                  <a href="#" className="social-icon">
+                                  </button>
+                                  <button className="social-icon">
                                     <i className="fa fa-google"></i>
-                                  </a>
-                                  <a href="#" className="social-icon">
+                                  </button>
+                                  <button className="social-icon">
                                     <i className="fa fa-linkedin"></i>
-                                  </a>
+                                  </button>
                               </div>
                               </form>
                 </div>
