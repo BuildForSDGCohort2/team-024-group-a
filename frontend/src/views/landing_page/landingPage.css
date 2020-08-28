@@ -67,7 +67,6 @@
 
 .side-img {
 	height: 100%;
-	
 	/* width: 50%; */
   display: flex;
   justify-content: center;
@@ -121,7 +120,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: .5s ease;
+  transition: 0.5s ease;
   cursor: pointer;
 }
 
@@ -129,6 +128,7 @@
   background-color: dodgerblue;
   color: white !important;
 }
+
 .feature-container {
   display: flex;
   flex-direction: column;
@@ -152,10 +152,10 @@
 
 .feature-col > h2 {
   font-size: 14px;
-  margin: 10px 0px;
+  margin: 10px 0;
 }
 
-.nav-logo > span{
+.nav-logo > span {
   font-size: 24px;
   color: white;
   background: dodgerblue;
@@ -163,13 +163,15 @@
   border-radius: 9px;
 }
 
-@media all and (max-width: 600px){
+@media all and (max-width: 600px) {
   .header-container {
     padding: 0;
   }
+
   .home-text > h1 {
     font-size: 30px;
   }
+
   .nav-btn {
     width: 45%;
   }
