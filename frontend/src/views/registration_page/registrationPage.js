@@ -77,6 +77,7 @@ class RegistrationPage extends React.Component {
                               </div>
                               <div className="input-field container1">
                                   <i className="fa fa-lock"></i>
+                                  {// eslint-disable-next-line react/jsx-no-duplicate-props}
                                   <input type="password" placeholder="Password" type={this.state.hidden ? "password" : "text"}
                                   value={this.state.password}
                                   onKeyUp={this.toggleCap}
