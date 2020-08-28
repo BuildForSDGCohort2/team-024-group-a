@@ -108,7 +108,7 @@ class RegistrationPage extends React.Component {
 
 
                                 <input type="submit" className="btn" value="Sign up" />
-                                <p style={{color: "black"}}>Already a User? Sign in</p>
+                                <p style={{color: "black"}}>Already a User? <Link to="/login"> Sign in</Link> </p>
                                 <p className="social-text">Or Sign up using</p>
 
                               <div className="social-media">
