@@ -77,12 +77,13 @@ class RegistrationPage extends React.Component {
                               </div>
                               <div className="input-field container1">
                                   <i className="fa fa-lock"></i>
-                                  <input type="password" placeholder="Password" type={this.state.hidden ? "password" : "text"}
+                                  <input type="password" p
+                                  laceholder="Password" 
+                                  //eslint-disable-next-line react/jsx-no-duplicate-props
+                                  type={this.state.hidden ? "password" : "text"}
                                   value={this.state.password}
                                   onKeyUp={this.toggleCap}
-                                  onChange={this.handleChange}
-                                  />
-
+                                  onChange={this.handleChange} />
                                   <i className="fa fa-eye" id="togglePassword" onClick={this.toggleFunc}></i>
                                   <p id="text" style={{ display: this.state.toggleCaps ? "" : "none" }}> Caps lock is ON.</p>
                               </div>
@@ -107,22 +108,22 @@ class RegistrationPage extends React.Component {
 
 
                                 <input type="submit" className="btn" value="Sign up" />
-                                <p style={{color: "black"}}>Already a User? <a href="#">Sign in</a></p>
+                                <p style={{color: "black"}}>Already a User? <Link to="/login"> Sign in</Link> </p>
                                 <p className="social-text">Or Sign up using</p>
 
                               <div className="social-media">
-                                  <a href="#" className="social-icon">
+                                  <button className="social-icon">
                                     <i className="fa fa-facebook-f"></i>
-                                  </a>
-                                  <a href="#" className="social-icon">
+                                  </button>
+                                  <button className="social-icon">
                                     <i className="fa fa-twitter"></i>
-                                  </a>
-                                  <a href="#" className="social-icon">
+                                  </button>
+                                  <button className="social-icon">
                                     <i className="fa fa-google"></i>
-                                  </a>
-                                  <a href="#" className="social-icon">
+                                  </button>
+                                  <button className="social-icon">
                                     <i className="fa fa-linkedin"></i>
-                                  </a>
+                                  </button>
                               </div>
                               </form>
                 </div>

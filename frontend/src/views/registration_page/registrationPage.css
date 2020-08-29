@@ -23,18 +23,16 @@ form {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0rem 5rem;
+  padding: 0 5rem;
   transition: all 0.2s 0.7s;
   overflow: hidden;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
 
-
-
 .title {
   font-size: 2.2rem;
-  color: #1E90FF;
+  color: #1e90ff;
   margin-bottom: 10px;
 }
 
@@ -83,11 +81,10 @@ form {
 }
 
 /* Select */
-.sel{
+.sel {
   margin-top: 20px;
   width: 380px;
   background-color: #f0f0f0;
-  margin: 10px 0;
   height: 55px;
   border-radius: 55px;
   padding: 0 0.4rem;
@@ -100,7 +97,7 @@ form {
 
 /* Sign Up Word */
 p a {
-  color: #1E90FF;
+  color: #1e90ff;
   text-decoration: none;
 }
 
@@ -136,18 +133,18 @@ p a {
 /* Displays when Social hover */
 .social-icon:hover {
   color: #4481eb;
-  border-color: #1E90FF;
+  border-color: #1e90ff;
 }
 
 /* sign Up button */
 .btn {
   width: 150px;
-  background-color: #1E90FF;
+  background-color: #1e90ff;
   border: none;
   outline: none;
   height: 49px;
   border-radius: 49px;
-  color: #F2F2F2;
+  color: #f2f2f2;
   text-transform: uppercase;
   font-weight: 600;
   margin: 10px 0;
@@ -158,13 +155,13 @@ p a {
 
 /* Sign up hover */
 .btn:hover {
-  background-color: #F2F2F2;
-  color: #1E90FF;
+  background-color: #f2f2f2;
+  color: #1e90ff;
 }
 
 /* Caplock ON Message */
 #text {
-  color:#1E90FF;
+  color: #1e90ff;
   margin-left: 50px;
 }
 
