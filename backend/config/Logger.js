@@ -7,8 +7,9 @@ class Logger {
     }
 
     log(){
-        
+        return false;
     }
+    
 
 }
 

@@ -9,11 +9,9 @@ class Passport {
 
     }
 
-    init(req, res, next){
+    init(){
         //AuthType can either be client, doctor, hospital or diagnostic center
-        var authType = req.query.authType;
-        authType = (authType !== undefined && typeof authType === "string" ? authType : "");
-        passport.use(authType, new LocalStrategy(
+        passport.use("login", new LocalStrategy(
            function(username, password, done){
                new User({username})
                 .fetch()
@@ -30,7 +28,7 @@ class Passport {
                 });
            }
         ));
-        next();
+  
         return this;
     }
 

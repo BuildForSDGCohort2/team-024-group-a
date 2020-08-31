@@ -1,9 +1,13 @@
 const _app = require("../../config/App")
+const mailer = require('../../config/Mailer')
+
+
+
 
 class GuestController {
 
     constructor(){
-
+        
     }
 
     welcome =  async (req, res) =>{

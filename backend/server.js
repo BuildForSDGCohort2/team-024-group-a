@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
+require('./config/Database').connect();
 
 
 //variable declarations
@@ -15,7 +16,7 @@ app.disable("x-powered-by");
 
 //Passport auth
 const passport = require("./config/Passport");
-passport.init().extractJwt();
+passport.init().extractJwt(process.env.SECRET_KEY);
 
 
 //Middleware for main app thread
