@@ -13,12 +13,14 @@ class Database {
             password: '',
             database: 'shdb'
         });
+        return this.con;
     }
 
     get pool(){
         if(this.con){
             return this.con;
         }
+        this.connect();
     }
 
 }
