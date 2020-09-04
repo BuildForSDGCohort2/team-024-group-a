@@ -10,7 +10,7 @@ class GuestController {
         
     }
 
-    welcome =  async (req, res) =>{
+        async welcome(req, res) {
         let message = await `Welcome to ${_app.APP_NAME} Platform`;
         return res.status(200).format({
             html: () =>{
