@@ -37,4 +37,13 @@ router
     res.status(200).json({ message: "POST to diagnostic center" });
   });
 
+router
+  .route("/pharmacy")
+  .get((req, res) => {
+    res.status(200).json({ message: "GET from pharmacy" });
+  })
+  .post((req, res) => {
+    res.status(200).json({ message: "POST to pharmacy" });
+  });
+
 module.exports = router;

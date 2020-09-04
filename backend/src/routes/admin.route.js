@@ -11,6 +11,15 @@ router
   });
 
 router
+  .route("/pharmacy")
+  .get((req, res) => {
+    res.status(200).json({ message: "GET from pharmacy" });
+  })
+  .post((req, res) => {
+    res.status(200).json({ message: "POST to pharmacy" });
+  });
+
+router
   .route("/doctors")
   .get((req, res) => {
     res.status(200).json({ message: "GET from doctors" });
