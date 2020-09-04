@@ -1,7 +1,7 @@
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 const passportJwt = require("passport-jwt");
-const User = require("../src/database/models/Auth");
+const knex = require("../src/database/knex");
 
 class Passport {
     
@@ -11,10 +11,15 @@ class Passport {
 
     init(){
         //AuthType can either be client, doctor, hospital or diagnostic center
-        passport.use("login", new LocalStrategy(
+        passport.use("login", new LocalStrategy({
+            usernameField : 'username',
+            passwordField : 'password'
+            },
            function(username, password, done){
-               new User({username})
-                .fetch()
+            knex('users')
+                .where('username', username)
+                .select('email', 'password', 'id', 'role')
+                .first()
                 .then((user) => {
                     if(!user){return done(null, false, {})}
                     user = user.toJSON();
