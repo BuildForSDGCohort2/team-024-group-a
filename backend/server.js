@@ -32,6 +32,7 @@ app.use("/api/client", require("./src/routes/client.route"));
 app.use("/api/doctor", require("./src/routes/doctors.route"));
 app.use("/api/hospital", require("./src/routes/hospitals.route"));
 app.use("/api/dcenter", require("./src/routes/diagnostic-center.route"));
+app.use("/api/admin", require("./src/routes/admin.route"));
 
 
 //SERVER LISTENING ON DESIGNATED PORT
