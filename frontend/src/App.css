@@ -47,7 +47,12 @@ input {
   overflow: hidden;
 }
 
-form {
+.logo1 {
+  margin-top: 2em;
+  margin-left: 46%
+}
+
+.sign-up-form {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,8 +63,6 @@ form {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
-
-
 
 .title {
   font-size: 2.2rem;
@@ -144,6 +147,7 @@ p a {
 .social-media {
   display: flex;
   justify-content: center;
+  margin-bottom: 2em;
 }
 
 /*Social Icon*/
@@ -197,13 +201,136 @@ p a {
   margin-left: 50px;
 }
 
+.foot {
+  text-align: center;
+}
+
 /* End CSS for registration Page */
 
 
 
 
 /* Start CSS for login Page */
+
+/*GOOGLE FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap");
+
+#body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Bai Jamjuree";
+
+}
+
+.logo {
+  margin-top: 2em;
+}
+
+.login-form {
+  margin-top: 2em;
+}
+
+.input-area {
+  padding-top: 1em;
+}
+
+.h1 {
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+h3 {
+  margin-right: 15%;
+}
+
+.input-space {
+  padding: 1.2em 0;
+  background-color: rgb(105, 173, 240);
+  border-radius: 4em;
+  max-width: 40em;
+  margin: 0 40%;
+}
+
+.input-space i {
+  text-align: center;
+  line-height: 1em;
+  color: rgb(225, 233, 242);
+  transition: 0.5s;
+  font-size: 1.1rem;
+  margin-right: 1em;
+}
+
+.input-space input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.input-space input::placeholder {
+  color: rgb(225, 233, 242);
+  font-weight: 500;
+}
+
+.input-space .fa-lock {
+  margin-left: .825em;
+}
+
+.input-space .fa-eye {
+    cursor: pointer;
+    color: #333;
+}
+
+h4 {
+  margin-left: 10%;
+}
+
+.login-button {
+  width: 20em;
+  height: 3em;
+  background-color: rgba(21, 26, 106, .9);
+  margin: 2em auto;
+  border-radius: 4em;
+  border: none;
+  outline: none;
+  color: rgb(225, 233, 242);
+  cursor: pointer;
+  font-size: 1.7em;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.login-button:hover {
+  background-color: rgba(21, 26, 106, .6);
+}
+
+.alt-signUp {
+  font-weight: 600;
+}
+
+footer {
+  background-color: rgba(105, 173, 240, .4);
+  height: 3em;
+  padding-top: .7em;
+  font-weight: 600;
+}
+
 .LoginPageContainer {
   background: linear-gradient(#06beb6, #48b1bf);
+  font-family: "Bai Jamjuree";
 }
 /* End CSS for Login Page */
+ /*max-width: 380px;
+  width: 100%;
+  margin: 10px 0;
+  height: 55px;
+  
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;*/
