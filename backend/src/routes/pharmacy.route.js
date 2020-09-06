@@ -4,10 +4,10 @@ var router = express.Router();
 router
   .route("/")
   .get((req, res) => {
-    res.status(200).json({ message: "GET from hospitals" });
+    res.status(200).json({ message: "GET from pharmacy" });
   })
   .post((req, res) => {
-    res.status(200).json({ message: "POST to hospitals" });
+    res.status(200).json({ message: "POST to pharmacy" });
   });
 
 router
@@ -47,12 +47,12 @@ router
   });
 
 router
-  .route("/pharmacy")
+  .route("hospitals")
   .get((req, res) => {
-    res.status(200).json({ message: "GET from pharmacy" });
+    res.status(200).json({ message: "GET from hospital" });
   })
   .post((req, res) => {
-    res.status(200).json({ message: "POST to pharmacy" });
+    res.status(200).json({ message: "POST to a doctor" });
   });
 
 
