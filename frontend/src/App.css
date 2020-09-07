@@ -1,8 +1,9 @@
 
-/*this class selector will be used for all the pages body, all pages are nested in the .App div*/
+/* this class selector will be used for all the pages body, all pages are nested in the .App div */
 .App {
   background: #F2F2F2;
 }
+
 
 /*button controls*/
 .Controls {
@@ -209,7 +210,6 @@ p a {
 
 
 
-
 /* Start CSS for login Page */
 
 /*GOOGLE FONTS*/
@@ -325,12 +325,4 @@ footer {
   font-family: "Bai Jamjuree";
 }
 /* End CSS for Login Page */
- /*max-width: 380px;
-  width: 100%;
-  margin: 10px 0;
-  height: 55px;
-  
-  display: grid;
-  grid-template-columns: 15% 85%;
-  padding: 0 0.4rem;
-  position: relative;*/
+
