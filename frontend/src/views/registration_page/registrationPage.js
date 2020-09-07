@@ -21,7 +21,7 @@ class RegistrationPage extends React.Component {
       this.toggleCap = this.toggleCap.bind(this);
     }
 
-    
+
     /* this function pushes all the user's password into the pass word objects*/
     handleChange(e) {
       this.setState({
@@ -62,7 +62,21 @@ class RegistrationPage extends React.Component {
                     <form action="#" className="sign-up-form">
                                 <h2 className="title">Sign up</h2>
 
-
+                                <div className="social-media">
+                                    <button className="social-icon">
+                                      <i className="fa fa-facebook-f"></i>
+                                    </button>
+                                    <button className="social-icon">
+                                      <i className="fa fa-twitter"></i>
+                                    </button>
+                                    <button className="social-icon">
+                                      <i className="fa fa-google"></i>
+                                    </button>
+                                    <button className="social-icon">
+                                      <i className="fa fa-linkedin"></i>
+                                    </button>
+                                </div>
+                                
                               <div className="input-field">
                                   <i className="fa fa-user"></i>
                                   <input type="text" placeholder="Name" />
@@ -78,7 +92,7 @@ class RegistrationPage extends React.Component {
                               <div className="input-field container1">
                                   <i className="fa fa-lock"></i>
                                   <input type="password" p
-                                  laceholder="Password" 
+                                  laceholder="Password"
                                   //eslint-disable-next-line react/jsx-no-duplicate-props
                                   type={this.state.hidden ? "password" : "text"}
                                   value={this.state.password}
@@ -111,20 +125,7 @@ class RegistrationPage extends React.Component {
                                 <p style={{color: "black"}}>Already a User? <Link to="/login"> Sign in</Link> </p>
                                 <p className="social-text">Or Sign up using</p>
 
-                              <div className="social-media">
-                                  <button className="social-icon">
-                                    <i className="fa fa-facebook-f"></i>
-                                  </button>
-                                  <button className="social-icon">
-                                    <i className="fa fa-twitter"></i>
-                                  </button>
-                                  <button className="social-icon">
-                                    <i className="fa fa-google"></i>
-                                  </button>
-                                  <button className="social-icon">
-                                    <i className="fa fa-linkedin"></i>
-                                  </button>
-                              </div>
+
                               </form>
                 </div>
 
