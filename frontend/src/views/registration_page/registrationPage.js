@@ -1,3 +1,6 @@
+import React from 'react';
+import {Link} from 'react-router-dom';
+import Logo from './swiftHealthLogo.png';
 import React from "react";
 import {Link} from "react-router-dom";
 import "./registrationPage.css";
@@ -58,7 +61,9 @@ class RegistrationPage extends React.Component {
         return (
             <div>
                 <Nav />
+
                 <div className="container">
+                    <Link to='/'> <img src={Logo} alt="" className = 'logo1' /> </Link>
                     <form action="#" className="sign-up-form">
                                 <h2 className="title">Sign up</h2>
 
@@ -108,6 +113,7 @@ class RegistrationPage extends React.Component {
 
 
                                 <input type="submit" className="btn" value="Sign up" />
+                                <p style={{color: "black"}}>Already a User? <Link to='/login'> Sign in</Link></p>
                                 <p style={{color: "black"}}>Already a User? <Link to="/login"> Sign in</Link> </p>
                                 <p className="social-text">Or Sign up using</p>
 
@@ -127,9 +133,8 @@ class RegistrationPage extends React.Component {
                               </div>
                               </form>
                 </div>
-
+                <footer className='foot'>Swift Health ©2020</footer>
                 <Link to="/">Go home</Link>
-
             </div>
         );
     };
