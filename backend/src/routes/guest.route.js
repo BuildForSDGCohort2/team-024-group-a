@@ -7,7 +7,7 @@ const guestController = require("../controllers/guest.controller");
 router
   .route("/")
   .get((req, res) => {
-    res.status(200).json({ message: "GET unAunthorization routes" });
+    res.status(200).json({ message: "GET unAuthorization routes" });
   })
   .post((req, res) => {
     res.status(200).json({ message: " take to login" });
