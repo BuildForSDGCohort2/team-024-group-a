@@ -4,19 +4,28 @@ var router = express.Router();
 router
   .route("/")
   .get((req, res) => {
-    res.status(200).json({ message: "GET MESSAGE for Diagnostic centers" });
+    res.status(200).json({ message: "GET from doctors" });
   })
   .post((req, res) => {
-    res.status(200).json({ message: "POST message to myself " });
+    res.status(200).json({ message: "POST to doctors" });
   });
 
 router
-  .route("/admin")
+  .route("/pharmacy")
   .get((req, res) => {
-    res.status(200).json({ message: "GET from admin" });
+    res.status(200).json({ message: "GET from pharmacy" });
   })
   .post((req, res) => {
-    res.status(200).json({ message: "POST to admin" });
+    res.status(200).json({ message: "POST to pharmacy" });
+  });
+
+router
+  .route("/doctors")
+  .get((req, res) => {
+    res.status(200).json({ message: "GET from doctors" });
+  })
+  .post((req, res) => {
+    res.status(200).json({ message: "POST to doctors" });
   });
 
 router
@@ -38,13 +47,12 @@ router
   });
 
 router
-  .route("/doctors")
+  .route("/dcenters")
   .get((req, res) => {
     res.status(200).json({ message: "GET from doctors" });
   })
   .post((req, res) => {
     res.status(200).json({ message: "POST to doctors" });
   });
-
 
 module.exports = router;

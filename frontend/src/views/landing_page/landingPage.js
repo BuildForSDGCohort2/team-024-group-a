@@ -95,7 +95,7 @@ class LandingPage extends React.Component {
                             </Col>
                             <Col className="feature-col"  xs={12} sm={11} lg={6} xl={6}>
                                 <div className="icon"><PhoneOutlined /></div>
-                                <h2>24/7 REDINESS</h2>
+                                <h2>24/7 READINESS</h2>
                             </Col>
                         </Row>
                      </div>
