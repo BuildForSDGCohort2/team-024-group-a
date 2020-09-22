@@ -1,8 +1,7 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import Logo from './swiftHealthLogo.png';
 import React from "react";
 import {Link} from "react-router-dom";
+import Logo from "./swiftHealthLogo.png";
+//import logo from "../../assest/images/swiftHealthLogo.png";
 import "./registrationPage.css";
 
 import Nav from "../../components/nav/nav";
@@ -17,11 +16,14 @@ class RegistrationPage extends React.Component {
         /* this state is keeping the plain password text */
         password: "",
         /* this state toggles the caps Lock if the true but the default value is false for now*/
-        toggleCaps: false
+        toggleCaps: false,
+        /* Changes the link to the selected dashbaord */
+        link: ""
       };
       this.handleChange = this.handleChange.bind(this);
       this.toggleFunc = this.toggleFunc.bind(this);
       this.toggleCap = this.toggleCap.bind(this);
+      this.handleDocNav = this.handleDocNav.bind(this);
     }
 
     
@@ -55,6 +57,13 @@ class RegistrationPage extends React.Component {
       }
     }
 
+    handleDocNav(e) {
+      if(e.target.value === "doctor"){
+        this.setState({
+          link: "/doctor"
+        })
+      }
+    }
 
 
     render(){
@@ -102,7 +111,7 @@ class RegistrationPage extends React.Component {
 
 
                               <div>
-                                  <select name="Registering as" id="Registering" className="sel">
+                                  <select name="Registering as" id="Registering" className="sel" onClick={this.handleDocNav}>
                                     <option value="diagnosis">Diagnosis Centre</option>
                                     <option value="doctor">Doctor</option>
                                     <option value="hospital">Hospital</option>
@@ -112,8 +121,7 @@ class RegistrationPage extends React.Component {
                              </div>
 
 
-                                <input type="submit" className="btn" value="Sign up" />
-                                <p style={{color: "black"}}>Already a User? <Link to='/login'> Sign in</Link></p>
+                                <Link to={this.state.link}><input type="submit" className="btn" value="Sign up" /></Link>
                                 <p style={{color: "black"}}>Already a User? <Link to="/login"> Sign in</Link> </p>
                                 <p className="social-text">Or Sign up using</p>
 
@@ -133,7 +141,6 @@ class RegistrationPage extends React.Component {
                               </div>
                               </form>
                 </div>
-                <footer className='foot'>Swift Health ©2020</footer>
                 <Link to="/">Go home</Link>
             </div>
         );
