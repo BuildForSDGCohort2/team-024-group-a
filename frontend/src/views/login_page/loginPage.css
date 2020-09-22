@@ -1,0 +1,96 @@
+#body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+
+.logo {
+  margin-top: 2em;
+}
+
+.login-form {
+  margin-top: 2em;
+}
+
+.input-area {
+  padding-top: 1em;
+}
+
+.h1 {
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+h3 {
+  margin-right: 15%;
+}
+
+.input-space {
+  padding: 1.2em 0;
+  background-color: rgb(105, 173, 240);
+  border-radius: 4em;
+  max-width: 40em;
+  margin: 0 40%;
+}
+
+.input-space i {
+  text-align: center;
+  line-height: 1em;
+  color: rgb(225, 233, 242);
+  transition: 0.5s;
+  font-size: 1.1rem;
+  margin-right: 1em;
+}
+
+.input-space input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.input-space input::placeholder {
+  color: rgb(225, 233, 242);
+  font-weight: 500;
+}
+
+.input-space .fa-lock {
+  margin-left: .825em;
+}
+
+.input-space .fa-eye {
+    cursor: pointer;
+    color: #333;
+}
+
+h4 {
+  margin-left: 10%;
+}
+
+.login-button {
+  width: 20em;
+  height: 3em;
+  background-color: rgba(21, 26, 106, .9);
+  margin: 2em auto;
+  border-radius: 4em;
+  border: none;
+  outline: none;
+  color: rgb(225, 233, 242);
+  cursor: pointer;
+  font-size: 1.7em;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.login-button:hover {
+  background-color: rgba(21, 26, 106, .6);
+}
+
+.alt-signUp {
+  font-weight: 600;
+}

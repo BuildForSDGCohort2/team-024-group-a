@@ -1,7 +1,7 @@
 import React from "react";
 import "./appointments.css";
 
-import { Table, Space } from 'antd';
+import { Table, Space } from "antd";
 
 class Appointments extends React.Component {
   constructor(){
@@ -9,18 +9,18 @@ class Appointments extends React.Component {
 
     this.state = {
       data : [{
-        key: '0',
-        name: 'John Brown',
+        key: "0",
+        name: "John Brown",
         sex: "M",
         description: "Diabetes",
         date: "25-Aug-1010",
         time: "00:00 ZM"
       },
       {
-        key: '1',
-        name: 'Name',
+        key: "1",
+        name: "Name",
         sex: "F",
-        description: 'High Blood Pressure',
+        description: "High Blood Pressure",
         date: "25-Aug-1010",
         time: "02:00 ZM"
       }]
@@ -32,10 +32,10 @@ class Appointments extends React.Component {
 
   handleAdd() {
     let newEntry = {
-      key: '3',
-      name: 'Name',
+      key: "3",
+      name: "Name",
       sex: "X",
-      description: 'Low Blood Pressure',
+      description: "Low Blood Pressure",
       date: "26-Aug-1010",
       time: "00:00 ZM"
     }
@@ -55,33 +55,33 @@ class Appointments extends React.Component {
   render() {
     const columns = [
       {
-        title: 'Name',
-        dataIndex: 'name',
-        key: 'name',
+        title: "Name",
+        dataIndex: "name",
+        key: "name",
       },
       {
-        title: 'Sex',
-        dataIndex: 'sex',
-        key: 'sex',
+        title: "Sex",
+        dataIndex: "sex",
+        key: "sex",
       },
       {
-        title: 'Description',
-        dataIndex: 'description',
-        key: 'description',
+        title: "Description",
+        dataIndex: "description",
+        key: "description",
       },
       {
-        title: 'Date',
-        dataIndex: 'date',
-        key: 'date',
+        title: "Date",
+        dataIndex: "date",
+        key: "date",
       },
       {
-        title: 'Time',
-        dataIndex: 'time',
-        key: 'time',
+        title: "Time",
+        dataIndex: "time",
+        key: "time",
       },
       {
-        title: 'Action',
-        key: 'action',
+        title: "Action",
+        key: "action",
         render: (appointment) => (
           <Space size="middle">
             <button className="del-btn" onClick={this.handleDel} value={appointment.key}>Delete</button>
