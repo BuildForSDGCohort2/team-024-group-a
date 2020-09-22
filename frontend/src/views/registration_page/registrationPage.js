@@ -17,6 +17,7 @@ class RegistrationPage extends React.Component {
         password: "",
         /* this state toggles the caps Lock if the true but the default value is false for now*/
         toggleCaps: false,
+        /* Changes the link to the selected dashbaord */
         link: ""
       };
       this.handleChange = this.handleChange.bind(this);
