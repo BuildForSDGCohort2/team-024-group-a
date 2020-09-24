@@ -1,0 +1,16 @@
+.App {
+  background: #F2F2F2;
+  padding: 1em;
+}
+  
+.App img {
+  border-radius: 50%;
+}
+  
+.ant-card-head {
+  margin-top: 1.5em;
+}
+
+.card-container {
+  text-align: justify;
+}

@@ -8,16 +8,17 @@ class Database {
 
     connect(){
         this.con = mysql.createPool({
-            host: 'localhost',
-            user: 'root',
-            password: '',
-            database: 'shdb'
-        });
+          host: process.env.HOST,
+          user: process.env.DB_USER,
+          password: process.env.DB_PWD,
+          database: process.env.HOST_DB
+         });
         return this.con;
     }
 
     get pool(){
         if(this.con){
+            
             return this.con;
         }
         this.connect();

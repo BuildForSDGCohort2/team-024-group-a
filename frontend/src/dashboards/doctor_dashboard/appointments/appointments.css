@@ -1,0 +1,23 @@
+.AppointmentContainer {
+  background: #f2f2f2;
+}
+  
+ul.ant-table-pagination-right {
+  float: none;
+  text-align: center;
+}
+  
+.add-btn {
+  background-color: #1e90ff;
+  color: #f2f2f2;
+  border: none;
+  display: block;
+  margin: 1em auto;
+  padding: 1.5em;
+}
+  
+.del-btn {
+  background-color: #ffffff;
+  color: #f08080;
+  border: none;
+}

@@ -3,7 +3,7 @@ import "./footer.css";
 
 const Footer = () => {
   return(
-    <div>
+    <div className="footer-container">
       <footer className="footer" >
         &copy; Swift Health 2020
       </footer>

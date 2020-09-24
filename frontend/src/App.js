@@ -9,23 +9,26 @@ import RegistrationPage from "./views/registration_page/registrationPage";
 import NotFound from "./views/notfound_page/notfound";
 import Footer from "./components/footer/footer";
 
+import DoctorDashboard from "./dashboards/doctor_dashboard/doctorDashboard";
+
 class App extends React.Component {
 
   render(){
-      return (
-        <div className="App">
-           <Router>
-              <Switch>
-                <Route  exact={true} path="/" component={LandingPage}/>
-                <Route  path="/signup" component={RegistrationPage}/>
-                <Route  path="/login" component={LoginPage}/>
-                <Route component={NotFound} />
-              </Switch>
-         </Router>
+    return (
+      <div className="App">
+        <Router>
+          <Switch>
+            <Route  exact={true} path="/" component={LandingPage}/>
+            <Route  path="/signup" component={RegistrationPage}/>
+            <Route  path="/login" component={LoginPage}/>
+            <Route path="/doctor" component={DoctorDashboard}/>
+            <Route component={NotFound} />
+          </Switch>
+        </Router>
 
-         <Footer />
-        </div>
-      );
+        <Footer />
+      </div>
+   );
   };
 
 };
