@@ -1,0 +1,36 @@
+
+.code-box-demo p {
+  margin: 0;
+}
+
+.ant-card-head-title{
+  color: white;
+  font-size: 20px;
+}
+
+.ant-card {
+  margin-bottom: 30px;
+  border-radius: 25px;
+  background-color: #1E90FF;
+  color: white;
+  font-family: Poppins;
+  font-size: 20px;
+  height: 275px;
+}
+
+.anticon{
+  font-size: 20px;
+}
+
+.post{
+  font-size: 17.5px;
+}
+
+.appoin{
+  border: 0.5px solid #1E90FF;
+  border-radius: 25px;
+  color: #1E90FF;
+  background: white;
+  margin-top: 5px;
+  font-family: serif;
+}

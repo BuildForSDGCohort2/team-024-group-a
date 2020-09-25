@@ -1,0 +1,20 @@
+.gutter-box {
+  padding: 80px 0;
+  background: #1E90FF;
+}
+[data-theme="dark"] .gutter-box {
+  background: #1E90FF;
+  color: white;
+}
+
+body{
+  color: white;
+}
+
+.ant-col .ant-col-6 .gutter-row{
+  height: 200px;
+}
+
+.ant-table-content{
+  margin-top: 15px;
+}
