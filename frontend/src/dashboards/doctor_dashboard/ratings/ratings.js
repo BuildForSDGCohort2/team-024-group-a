@@ -1,7 +1,7 @@
 import React from "react";
 import "./ratings.css";
 
-import { Rate, Carousel, Image } from "antd";
+import { Rate, Carousel } from "antd";
 
 const contentStyle = {
   height: "100vh",
@@ -15,12 +15,12 @@ const Ratings = () => {
     <Carousel autoplay>
       <div>
         <div style={contentStyle}>
-          <Image
-            className="margin-bottom"
+          <img
+            alt="person's avatar"
+            className="personAvatar"
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
           />
-          <br />
           <Rate disabled defaultValue={2} />
 
           <blockquote className="comments">
@@ -36,12 +36,12 @@ const Ratings = () => {
       </div>
       <div>
         <div style={contentStyle}>
-          <Image
-            className="margin-bottom"
+        <img
+            alt="person's avatar"
+            className="personAvatar"
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
           />
-          <br />
           <Rate disabled defaultValue={3} />
 
           <blockquote className="comments">
@@ -61,12 +61,12 @@ const Ratings = () => {
       </div>
       <div>
         <div style={contentStyle}>
-          <Image
-            className="margin-bottom"
+        <img
+            alt="person's avatar"
+            className="personAvatar"
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
           />
-          <br />
           <Rate disabled defaultValue={1} />
 
           <blockquote className="comments">
@@ -84,12 +84,12 @@ const Ratings = () => {
       </div>
       <div>
         <div style={contentStyle}>
-          <Image
-            className="margin-bottom"
+        <img
+            alt="person's avatar"
+            className="personAvatar"
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
           />
-          <br />
           <Rate disabled defaultValue={5} />
 
           <blockquote className="comments">
@@ -113,12 +113,12 @@ const Ratings = () => {
       </div>
       <div>
         <div style={contentStyle}>
-          <Image
-            className="margin-bottom"
+        <img
+            alt="person's avatar"
+            className="personAvatar"
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
           />
-          <br />
           <Rate disabled defaultValue={4} />
 
           <blockquote className="comments">
