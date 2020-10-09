@@ -1,9 +1,7 @@
 import React from "react";
 
-import { Form, Input, Button, Select, DatePicker, Space, Upload } from "antd";
+import { Form, Input, Button, Upload } from "antd";
 import { InboxOutlined } from "@ant-design/icons";
-
-const { RangePicker } = DatePicker;
 
 const DeliveryForm = () => {
   const normFile = (e) => {

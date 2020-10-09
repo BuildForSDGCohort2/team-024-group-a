@@ -23,7 +23,7 @@ class RegistrationPage extends React.Component {
       this.handleChange = this.handleChange.bind(this);
       this.toggleFunc = this.toggleFunc.bind(this);
       this.toggleCap = this.toggleCap.bind(this);
-      this.handleDocNav = this.handleDocNav.bind(this);
+      this.handleCatSelect = this.handleCatSelect.bind(this);
     }
 
 
@@ -57,12 +57,10 @@ class RegistrationPage extends React.Component {
       }
     }
 
-    handleDocNav(e) {
-      if(e.target.value === "doctor"){
-        this.setState({
-          link: "/doctor"
-        })
-      }
+    handleCatSelect(e) {
+      this.setState({
+        link: `/${e.target.value}`
+      })
     }
 
 
@@ -125,7 +123,7 @@ class RegistrationPage extends React.Component {
 
 
                               <div>
-                                  <select name="Registering as" id="Registering" className="sel" onClick={this.handleDocNav}>
+                                  <select name="Registering as" id="Registering" className="sel" onClick={this.handleCatSelect}>
                                     <option value="diagnosis">Diagnosis Centre</option>
                                     <option value="doctor">Doctor</option>
                                     <option value="hospital">Hospital</option>

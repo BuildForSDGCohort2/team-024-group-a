@@ -1,19 +1,19 @@
 import React from 'react';
 import './patientDashboard.css';
-import logo from "../src/swiftHealthLogo.png";
+import logo from "../../assest/images/swiftHealthLogo.png";
 import { Typography, Button } from 'antd';
 import { notification } from 'antd';
 
-import Profile from "./components1/profile";
-import Appointments from "./components1/appointment";
-import SeeaDoctor from "./components1/seeaDoctor";
-import HistoryPatients from "./components1/historyPatients";
-import EditProfile from "./components1/editProfile";
-import ChangePassword from "./components1/changePassword";
-import Payment from "./components1/payment";
-import Balance from "./components1/balance";
-import Payout from "./components1/payout";
-import Ratings from "./components1/ratings";
+import Profile from "./components/profile";
+import Appointments from "./components/appointment";
+import SeeaDoctor from "./components/seeaDoctor";
+import HistoryPatients from "./components/historyPatients";
+import EditProfile from "./components/editProfile";
+import ChangePassword from "./components/changePassword";
+import Payment from "./components/payment";
+import Balance from "./components/balance";
+import Payout from "./components/payout";
+import Ratings from "./components/ratings";
 
 import { Layout, Menu, Dropdown } from "antd";
 import {
@@ -77,6 +77,10 @@ class DoctorDashboard extends React.Component {
     this.setState({
       tabNavigations: copyState,
     });
+  }
+
+  componentDidMount() {
+    window.scrollTo(0, 0)
   }
 
   render() {

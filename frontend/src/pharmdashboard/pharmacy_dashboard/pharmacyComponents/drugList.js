@@ -44,11 +44,11 @@ class DrugList extends React.Component {
         render: (text, record) => {
      return (
       <div>
-      <img src={record.productimage}/>
+      <img src={record.productimage} alt=""/>
       {/*<Avatar src={record.productimage}/> */}
         <div>
          <div>{record.productnumber}</div>
-         <a href="javascript:alert('ciao');">{record.productname}</a>
+         <a href={alert('ciao')}>{record.productname}</a>
          </div>
       </div>
     );},

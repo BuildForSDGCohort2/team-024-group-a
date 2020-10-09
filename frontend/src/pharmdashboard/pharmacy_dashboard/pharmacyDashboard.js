@@ -1,18 +1,18 @@
 import React from 'react';
 import './pharmacyDashboard.css';
-import logo from "../src/swiftHealthLogo.png";
+import logo from "../../assest/images/swiftHealthLogo.png";
 import { Typography, Button } from 'antd';
 import { notification } from 'antd';
 
-import Profile from "./components/profile";
-import EditProfile from "./components/editProfile";
-import ChangePassword from "./components/changePassword";
-import Ratings from "./components/ratings";
-import Prescription from "./components/prescription";
-import DrugList from "./components/drugList";
-import IncludeDrug from "./components/includeDrug";
-import DeliveryProfile from "./components/deliveryProfile";
-import DeliveryForm from "./components/deliveryForm";
+import Profile from "./pharmacyComponents/profile";
+import EditProfile from "./pharmacyComponents/editProfile";
+import ChangePassword from "./pharmacyComponents/changePassword";
+import Ratings from "./pharmacyComponents/ratings";
+import Prescription from "./pharmacyComponents/prescription";
+import DrugList from "./pharmacyComponents/drugList";
+import IncludeDrug from "./pharmacyComponents/includeDrug";
+import DeliveryProfile from "./pharmacyComponents/deliveryProfile";
+import DeliveryForm from "./pharmacyComponents/deliveryForm";
 
 import { Layout, Menu, Dropdown } from "antd";
 import {
@@ -74,6 +74,10 @@ class PharmacyDashboard extends React.Component {
     this.setState({
       tabNavigations: copyState,
     });
+  }
+
+  componentDidMount() {
+    window.scrollTo(0, 0)
   }
 
   render() {

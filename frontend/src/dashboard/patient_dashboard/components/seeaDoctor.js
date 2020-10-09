@@ -1,11 +1,10 @@
 import React from "react";
 import "./seeaDoctor.css";
 
-import { Form, Input, Button, Select, DatePicker, Space, Upload } from "antd";
+import { Form, Input, Button, Select, Upload } from "antd";
 import { Typography } from 'antd';
 import { InboxOutlined } from "@ant-design/icons";
 
-const { RangePicker } = DatePicker;
 const { Title } = Typography;
 
 const SeeaDoctor = () => {
