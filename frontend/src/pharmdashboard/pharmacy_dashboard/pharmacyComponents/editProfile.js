@@ -1,11 +1,10 @@
 import React from "react";
 import "./editProfile.css";
 
-import { Form, Input, Button, Select, DatePicker, Space, Upload } from "antd";
+import { Form, Input, Button, Select, DatePicker, Upload } from "antd";
 import { Typography } from 'antd';
 import { InboxOutlined } from "@ant-design/icons";
 
-const { RangePicker } = DatePicker;
 const { Title } = Typography;
 
 function onChange(date, dateString) {

@@ -2,12 +2,9 @@ import React from 'react';
 import './payment.css';
 import { Divider } from 'antd';
 import { Typography } from 'antd';
-import { List } from 'antd';
 import { Button } from 'antd';
 
 const { Title } = Typography;
-
-const style = { background: '#0092ff',  color: 'white'};
 
 class Payment extends React.Component {
     render() {

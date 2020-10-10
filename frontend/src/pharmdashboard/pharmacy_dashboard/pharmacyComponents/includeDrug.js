@@ -1,10 +1,8 @@
 import React from "react";
 import "./editProfile.css";
 
-import { Form, Input, Button, Select, DatePicker, Space, Upload } from "antd";
+import { Form, Input, Button, Upload } from "antd";
 import { InboxOutlined } from "@ant-design/icons";
-
-const { RangePicker } = DatePicker;
 
 const IncludeDrug = () => {
   const normFile = (e) => {
