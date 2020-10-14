@@ -17,7 +17,7 @@ const Ratings = () => {
         <div style={contentStyle}>
           <img
             alt="personal avartar"
-            className="margin-bottom"
+            className="personAvatar"
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
           />
@@ -39,7 +39,7 @@ const Ratings = () => {
         <div style={contentStyle}>
           <img
             alt="personal avartar"
-            className="margin-bottom"
+            className="personAvatar"
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
           />
@@ -65,7 +65,7 @@ const Ratings = () => {
         <div style={contentStyle}>
           <img
             alt="personal avartar"
-            className="margin-bottom"
+            className="personAvatar"
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
           />
@@ -89,7 +89,7 @@ const Ratings = () => {
         <div style={contentStyle}>
           <img
             alt="personal avartar"
-            className="margin-bottom"
+            className="personAvatar"
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
           />
@@ -119,7 +119,7 @@ const Ratings = () => {
         <div style={contentStyle}>
           <img
             alt="personal avartar"
-            className="margin-bottom"
+            className="personAvatar"
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
           />
