@@ -1,7 +1,7 @@
 import React from "react";
 import "./ratings.css";
 
-import { Rate, Carousel, Image } from "antd";
+import { Rate, Carousel } from "antd";
 
 const contentStyle = {
   height: "100vh",
@@ -15,8 +15,9 @@ const Ratings = () => {
     <Carousel autoplay>
       <div>
         <div style={contentStyle}>
-          <Image
-            className="margin-bottom"
+          <img
+            alt="personal avatar"
+            className="personAvatar"
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
           />
@@ -36,8 +37,9 @@ const Ratings = () => {
       </div>
       <div>
         <div style={contentStyle}>
-          <Image
-            className="margin-bottom"
+          <img
+            alt="personal avatar"
+            className="personAvatar"
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
           />
@@ -47,11 +49,11 @@ const Ratings = () => {
           <blockquote className="comments">
             <p>
               Efficiently unleash cross-media information without cross-media
-              value. Quickly maximize timely deliverables for real-
-              Efficiently unleash cross-media information without cross-media
-              value. Quickly maximize timely deliverables for real-
-              Efficiently unleash cross-media information without cross-media
-              value. Quickly maximize timely deliverables for real-
+              value. Quickly maximize timely deliverables for real- Efficiently
+              unleash cross-media information without cross-media value. Quickly
+              maximize timely deliverables for real- Efficiently unleash
+              cross-media information without cross-media value. Quickly
+              maximize timely deliverables for real-
             </p>
             <footer>
               <cite>- Jane Doe</cite>
@@ -61,8 +63,9 @@ const Ratings = () => {
       </div>
       <div>
         <div style={contentStyle}>
-          <Image
-            className="margin-bottom"
+          <img
+            alt="personal avatar"
+            className="personAvatar"
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
           />
@@ -72,9 +75,9 @@ const Ratings = () => {
           <blockquote className="comments">
             <p>
               Efficiently unleash cross-media information without cross-media
-              value. Quickly maximize timely deliverables for real-
-              Efficiently unleash cross-media information without cross-media
-              value. Quickly maximize timely deliverables for real-
+              value. Quickly maximize timely deliverables for real- Efficiently
+              unleash cross-media information without cross-media value. Quickly
+              maximize timely deliverables for real-
             </p>
             <footer>
               <cite>- Jean Doe</cite>
@@ -84,8 +87,9 @@ const Ratings = () => {
       </div>
       <div>
         <div style={contentStyle}>
-          <Image
-            className="margin-bottom"
+          <img
+            alt="personal avatar"
+            className="personAvatar"
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
           />
@@ -95,15 +99,15 @@ const Ratings = () => {
           <blockquote className="comments">
             <p>
               Efficiently unleash cross-media information without cross-media
-              value. Quickly maximize timely deliverables for real-
-              Efficiently unleash cross-media information without cross-media
-              value. Quickly maximize timely deliverables for real-
-              Efficiently unleash cross-media information without cross-media
-              value. Quickly maximize timely deliverables for real-
-              Efficiently unleash cross-media information without cross-media
-              value. Quickly maximize timely deliverables for real-
-              Efficiently unleash cross-media information without cross-media
-              value. Quickly maximize timely deliverables for real-
+              value. Quickly maximize timely deliverables for real- Efficiently
+              unleash cross-media information without cross-media value. Quickly
+              maximize timely deliverables for real- Efficiently unleash
+              cross-media information without cross-media value. Quickly
+              maximize timely deliverables for real- Efficiently unleash
+              cross-media information without cross-media value. Quickly
+              maximize timely deliverables for real- Efficiently unleash
+              cross-media information without cross-media value. Quickly
+              maximize timely deliverables for real-
             </p>
             <footer>
               <cite>- Jonathan Doe</cite>
@@ -113,8 +117,9 @@ const Ratings = () => {
       </div>
       <div>
         <div style={contentStyle}>
-          <Image
-            className="margin-bottom"
+          <img
+            alt="personal avatar"
+            className="personAvatar"
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
           />
@@ -124,10 +129,11 @@ const Ratings = () => {
           <blockquote className="comments">
             <p>
               Efficiently unleash cross-media information without cross-media
-              value. Quickly maximize timely deliverables for real-
-              Efficiently unleash cross-media information without cross-media
-              value. Quickly maximize timely deliverables for real-Efficiently unleash cross-media information without cross-media
-              value. Quickly maximize timely deliverables for real-
+              value. Quickly maximize timely deliverables for real- Efficiently
+              unleash cross-media information without cross-media value. Quickly
+              maximize timely deliverables for real-Efficiently unleash
+              cross-media information without cross-media value. Quickly
+              maximize timely deliverables for real-
             </p>
             <footer>
               <cite>- Janelle Doe</cite>
