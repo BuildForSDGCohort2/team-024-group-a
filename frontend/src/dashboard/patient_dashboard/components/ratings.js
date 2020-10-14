@@ -1,7 +1,7 @@
 import React from "react";
 import "./ratings.css";
 
-import { Rate, Carousel, Image } from "antd";
+import { Rate, Carousel } from "antd";
 
 const contentStyle = {
   height: "100vh",
@@ -15,7 +15,8 @@ const Ratings = () => {
     <Carousel autoplay>
       <div>
         <div style={contentStyle}>
-          <Image
+          <img
+            alt="personal avartar"
             className="margin-bottom"
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
@@ -36,7 +37,8 @@ const Ratings = () => {
       </div>
       <div>
         <div style={contentStyle}>
-          <Image
+          <img
+            alt="personal avartar"
             className="margin-bottom"
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
@@ -61,7 +63,8 @@ const Ratings = () => {
       </div>
       <div>
         <div style={contentStyle}>
-          <Image
+          <img
+            alt="personal avartar"
             className="margin-bottom"
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
@@ -84,7 +87,8 @@ const Ratings = () => {
       </div>
       <div>
         <div style={contentStyle}>
-          <Image
+          <img
+            alt="personal avartar"
             className="margin-bottom"
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
@@ -113,7 +117,8 @@ const Ratings = () => {
       </div>
       <div>
         <div style={contentStyle}>
-          <Image
+          <img
+            alt="personal avartar"
             className="margin-bottom"
             width={200}
             src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
